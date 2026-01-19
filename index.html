@@ -56,6 +56,8 @@
             text-align: center;
             font-size: 0.9em;
             color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 1em;
         }
         .app-icon {
             display: block;
@@ -84,33 +86,38 @@
             color: #856404;
             margin-top: 0;
         }
+        .website-link {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 25px 0;
+            border: 2px solid #bbdefb;
+        }
+        .website-link a {
+            font-size: 1.2em;
+            color: #1e88e5;
+            font-weight: bold;
+        }
         @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 1.2em;
-            }
-            h3 {
-                font-size: 1em;
-            }
-            p, li {
-                font-size: 0.9em;
-            }
-            .app-icon {
-                max-width: 80px;
-            }
+            body { padding: 10px; }
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1.2em; }
+            h3 { font-size: 1em; }
+            p, li { font-size: 0.9em; }
+            .app-icon { max-width: 80px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/JoashTech/bible-trivia-privacy/main/ic_trivia_icon.png" alt="Bible Trivia App Icon" class="app-icon">
+        <img src="https://raw.githubusercontent.com/JoashTech/bible-trivia-privacy/main/ic_trivia_icon.png" 
+             alt="Bible Trivia App Icon" 
+             class="app-icon">
+
         <h1>Privacy Policy for Bible Trivia</h1>
-        <p class="last-updated">Last Updated: November 15, 2025</p>
+        <p class="last-updated">Last Updated: January 19, 2026</p>
+
         <p>JoshTechApps ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we handle and protect your information when you use our mobile game application, <strong>Bible Trivia</strong> (the "Game"). The Game provides Bible quiz challenges, scripture reading, and spiritual learning through interactive gameplay.</p>
 
         <div class="data-flow">
@@ -250,14 +257,22 @@
         <p><strong>Email</strong>: <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a><br>
         <strong>Developer</strong>: JoshTechApps</p>
 
+     <!-- Added Website Link Section -->
+        <div class="website-link">
+            <p>Visit our official website for more apps, updates, and support:</p>
+            <a href="https://joshtechapps.netlify.app" target="_blank">
+                View Our Website for more from us
+            </a>
+        </div>
+
         <div class="footer">
-            &copy; 2025–<span id="currentYear"></span> JoshTechApps. All Bible content used for educational purposes under fair use. <br>
+            © 2025–<span id="currentYear"></span> JoshTechApps. All Bible content used for educational purposes under fair use.<br>
             "Thy word is a lamp unto my feet, and a light unto my path." – Psalm 119:105
         </div>
     </div>
 
     <script>
-        // Automatically update the copyright year every time the page loads
+        // Automatically update the copyright year range
         document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
 </body>
